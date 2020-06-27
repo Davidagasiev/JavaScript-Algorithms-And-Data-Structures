@@ -1,14 +1,9 @@
-function binary_Search (list, item) {
-	let start = 0,
-		last  = list.length - 1,
-		middleIndex = Math.floor((start + last) / 2);
-	while (list[middleIndex] != item && start < last) {
-		if (item < list[middleIndex]) {
-			last = middleIndex -1;
-		} else if(item > list[middleIndex]){
-			start = middleIndex + 1;
-		}
-		middleIndex = Math.floor((start + last) / 2);
+let binarySearch = (list, target) => {
+	let left   = 0,
+		right  = list.length - 1,
+		middle = Math.floor((left + right) / 2);
+	while (list[middle] !== target && left < right) {
+	 	target < list[middle] ? right = --middle : left = ++middle;
 	}
-	return list[middleIndex] != item ? -1 : middleIndex;
+	return list[middle] !== target ? -1 : middle;
 }
