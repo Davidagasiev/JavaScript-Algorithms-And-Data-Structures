@@ -1,2 +1,2 @@
 # JavaScript-Algorithms
-All JavaScript Algorithms which I have learnt.
+All JavaScript Algorithms and Data Structures which I have learnt.
