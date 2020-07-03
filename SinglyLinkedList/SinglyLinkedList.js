@@ -12,7 +12,7 @@ class SinglyLinkedList{
         this.length = 0;
     }
     push(val){
-        var newNode = new Node(val);
+        let newNode = new Node(val);
         if(!this.head){
             this.head = newNode;
             this.tail = this.head;
